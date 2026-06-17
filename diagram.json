@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "author": "raj",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 38.4, "left": 4.84, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -257.7,
+      "left": 149.5,
+      "attrs": { "distance": "19" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": 26.8, "left": 336, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -55.2,
+      "left": -391.8,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -272,
+      "left": -311.2,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:VCC", "esp:5V", "red", [ "v364.8", "h-105.6" ] ],
+    [ "ultrasonic1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "esp:5", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:18", "green", [ "v0" ] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "h336", "v211.2" ] ],
+    [ "lcd1:VCC", "esp:5V", "red", [ "h201.6", "v326.5" ] ],
+    [ "lcd1:SDA", "esp:21", "green", [ "h297.6", "v365" ] ],
+    [ "lcd1:SCL", "esp:22", "green", [ "h115.2", "v307.5", "h172.8" ] ],
+    [ "servo1:GND", "esp:GND.2", "black", [ "h-57.6", "v-28.8", "h-144" ] ],
+    [ "servo1:V+", "esp:5V", "green", [ "h-364.8", "v67.3" ] ],
+    [ "servo1:PWM", "esp:13", "green", [ "h-76.8", "v125", "h-153.6" ] ],
+    [ "bz1:1", "esp:GND.2", "green", [ "v0" ] ],
+    [ "bz1:2", "esp:27", "green", [ "v67.2", "h172.4" ] ]
+  ],
+  "dependencies": {}
+}
