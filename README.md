@@ -21,6 +21,7 @@ Simulate a flood monitoring system that
 
 # REQUIRED COMPONENTS
 #Simulation Components (Wokwi Hardware)
+
 1 ESP32 Board: Microcontroller that processes data, manages Wi-Fi, and runs the control logic.
 
 2 HC-SR04 Ultrasonic Sensor: Measures water level by tracking sound wave echoes.
