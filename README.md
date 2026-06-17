@@ -44,7 +44,7 @@ Simulate a flood monitoring system that
 
 4 Blynk Webhook/Event Engine (logEvent): Triggers and sends instant mobile push notifications during critical flood emergencies.
 
-# FLOW CHART OF CODDE 
+# FLOW CHART OF CODE 
 (provided)
 
  
