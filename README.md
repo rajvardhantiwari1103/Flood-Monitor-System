@@ -22,15 +22,25 @@ Simulate a flood monitoring system that
 # REQUIRED COMPONENTS
 #Simulation Components (Wokwi Hardware)
 1 ESP32 Board: Microcontroller that processes data, manages Wi-Fi, and runs the control logic.
+
 2 HC-SR04 Ultrasonic Sensor: Measures water level by tracking sound wave echoes.
+
 3 Servo Motor: Simulates the physical opening and closing of the dam gate.
+
 4 16x2 I2C LCD: Displays real-time water levels and system status on-site.
+
 5 Piezo Buzzer: Sounds audible alarms (short beeps for warning, continuous for critical flood).
+
 6 Virtual Wi-Fi (Wokwi-GUEST): Provides the internet gateway for the ESP32 inside the simulator.
+
 #Cloud Components (Blynk IoT) 
+
 1 Blynk Cloud Server: Securely manages the connection using your unique Template ID and Auth Token.
+
 2 Virtual Pins ($V_0, V_1, V_2$): Data streams that send live water levels and status updates to the cloud.
+
 3 Blynk Dashboard: The visual web/mobile interface used by authorities to monitor the dam remotely.
+
 4 Blynk Webhook/Event Engine (logEvent): Triggers and sends instant mobile push notifications during critical flood emergencies.
 
 # FLOW CHART OF CODDE 
