@@ -9,11 +9,16 @@ Simulate a flood monitoring system that
 (b) provides real-time alerts to authorities via the cloud when flow levels exceed a predefined threshold, indicating potential flooding risks.
 
 # SCOPE OF THE SOLUTION 
-1)Automated Sensing & Control: Continuous water level measurement using an ultrasonic sensor to automatically drive a dam gate (servo motor) and sound local buzzer alarms.
-2)Local Monitoring: Visual output of live distance data and threat levels on a $16 \times 2$ I2C LCD screen.
-3)Cloud Telemetry & Alerting: Real-time data logging to a Blynk IoT dashboard and immediate push notification alerts delivered to authorities during flood emergencies.
-4)Virtual Prototype: A fully simulated, risk-free hardware environment running on an ESP32 via Wokwi.
-5)Fail-Safe Mechanism: Automatic execution of emergency safety routines (gate opens, buzzer sounds) if a sensor failure occurs.
+1)
+Automated Sensing & Control: Continuous water level measurement using an ultrasonic sensor to automatically drive a dam gate (servo motor) and sound local buzzer alarms.
+2)
+  Local Monitoring: Visual output of live distance data and threat levels on a $16 \times 2$ I2C LCD screen.
+3)
+  Cloud Telemetry & Alerting: Real-time data logging to a Blynk IoT dashboard and immediate push notification alerts delivered to authorities during flood emergencies.
+4)
+  Virtual Prototype: A fully simulated, risk-free hardware environment running on an ESP32 via Wokwi.
+5)
+  Fail-Safe Mechanism: Automatic execution of emergency safety routines (gate opens, buzzer sounds) if a sensor failure occurs.
 
 # REQUIRED COMPONENTS
 #Simulation Components (Wokwi Hardware)
